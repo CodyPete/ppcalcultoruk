@@ -1,0 +1,85 @@
+body {
+    background-color: silver;
+    text-align: center;
+}
+
+header {
+    color: slategray; /* Set the color to slategray */
+    font-family: Helvetica;
+    font-size: 2em;
+    margin: 20px;
+}
+
+p {
+    color: green;
+    font-family: Helvetica;
+    font-size: 2em;
+    margin: 20px;
+}
+
+
+
+img {
+    margin: 60px 0 30px 0;
+    width: 400px;
+}
+
+.flashed-message {
+    font-family: Helvetica; /* Use Helvetica font */
+    color: green !important; /* Set text color to green with higher priority */
+    /* Add any additional styling you want */
+}
+
+label[for="session_total"] {
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+#session_total {
+    width: 55px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+label[for="sessions_covered"] {
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+#sessions_covered {
+    width: 55px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+label[for="salary_tier"] {
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+#salary_tier {
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 1.3em;
+}
+
+#cpp {
+    background-color: gray;
+    color: white;
+    width: 250px !important; /* Set width to 250px with higher priority */
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 1.3em;
+}

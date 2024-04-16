@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Period Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+
+</head>
+<body>
+    <img src="https://raw.githubusercontent.com/CodyPete/Equinox/main/Equinox-Logo%20Medium.png">
+    <h1>Pay Period Calculator</h1>
+    <br>
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+    <form action="/calculate_pp" method="post">
+        <label for="session_total">Session Total:</label>
+        <input type="number" id="session_total" name="session_total"><br><br>
+        <label for="sessions_covered">Sessions Covered:</label>
+        <input type="number" id="sessions_covered" name="sessions_covered"><br><br>
+        <label for="salary_tier">Salary Tier:</label>
+        <select id="salary_tier" name="salary_tier">
+            <option value="Coach">Coach</option>
+            <option value="Coach+">Coach+</option>
+            <option value="CoachX">CoachX</option>
+        </select><br><br>
+        <input type="submit" value="Calculate Pay Period">
+    </form>
+</body>
+</html>
